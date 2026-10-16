@@ -47,28 +47,30 @@ body {
             padding-left: 20px;
         }
 
-        .tabla-exitos{
+        .tabla-exitos table{
+            border-collapse: collapse;
+            margin: 0 auto 20px;
             
-            table{
-                border-collapse: collapse;
-                margin: 0 auto 20px;
-            }
-            
-            table, th, td{                
+            th, td{                
                 border: 1px solid  #DDD;   
             }
-            
+                
             td{
                 padding: 10px;
                 text-align: left;
                 white-space: nowrap;
             }
-            
+                
             thead{
                 background-color: #2C3E50;
                 color: white;
                 text-align: center;
+
+                td{
+                    text-align: center;
+                }
             }
+
         }
         
         .enlace-web a{
