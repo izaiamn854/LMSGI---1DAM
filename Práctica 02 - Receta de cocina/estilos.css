@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    header{
+        background-color: #F5A623;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+
+        h1{
+            margin: 0;
+        }
+    }
+
+    main{
+        background-color: Beige;
+        padding: 2rem;
+
+        .receta{
+            background-color: white;
+            color: #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            border-radius: 10px;
+            padding: 10px;
+
+            .imagen-kebab{
+                justify-content: center;
+                align-items: center;
+                img{
+                    max-width: 100%;
+                    margin: 0 0 20px;
+                    border-radius: 10px;
+                }
+            }
+
+            .caracteristicas{
+
+                ul{
+                    list-style: square;
+                    padding-left: 20px;
+
+                    li{
+                        margin-bottom: 10px;
+                    }   
+                }
+            }
+
+            .ingredientes{
+                margin-top: 0.5rem;
+
+                table{
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    th{
+                        background-color: #F5A623;
+                        color: white;
+                        padding: 0.75rem 1rem;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                    td{
+                        padding: 0.65rem 1rem;
+                        border-bottom: 1px solid #333;
+                        text-align: center;
+                    }
+                    tbody{
+
+                        tr:nth-child(even) {
+                            background-color: #fafafa;
+                        }
+                        
+                        tr:last-child td {
+                            border-bottom: none;
+                        }
+
+                    }
+                }
+
+
+            }
+
+            h1{
+                color: #F5A623;
+                text-align: center;
+            }
+
+            h2{
+                color: #F5A623;
+            }
+
+            .elaboracion{
+                line-height: 1.6;
+            }
+
+        }
+    }
+
+    footer{
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+}
